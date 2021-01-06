@@ -106,22 +106,10 @@ export default class App extends React.Component {
 
         <div style={{height: 10}}/>
 
-<<<<<<< HEAD
-        <TextField
-          id="filled-basic"
-          label="Search"
-          variant="filled"
-          onChange={e => this.search(e.target.value)}
-          defaultValue="Damen"
-          ref={this.query}
-          fullWidth={100}
-        />
-=======
         <textarea
           onChange={e => this.exec(e.target.value)}
           placeholder="Enter some SQL. No inspiration ? Try “select sqlite_version()”"
         ></textarea>
->>>>>>> 4e7d90eb3d4171c3fe0a319c50ec1008da37a942
 
         <pre className="error">{(err || "").toString()}</pre>
 
